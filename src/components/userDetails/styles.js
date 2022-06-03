@@ -14,7 +14,7 @@ export const Name = styled.h1`
     width: 100%;
     text-align: center;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     color: #444;
 `
 

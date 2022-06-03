@@ -12,7 +12,10 @@ const Header = () => {
     async function getUserData() {
         try{
             const response = await client.get(`/${searchedValue}`)
+            const repos = await client.get(`/${searchedValue}/repos`)
+
             ctx.setUserData(response.data);
+            ctx.setRepos(repos.data);
         } catch(err) {
             console.log(err)
         }
