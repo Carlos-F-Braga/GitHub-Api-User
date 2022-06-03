@@ -17,6 +17,8 @@ export const NumberContainer = styled.div `
     justify-content: center;
     flex-direction: column;
 
+
+
     &:hover {
         cursor: pointer;
         background: rgba(0, 0, 0, .03);
