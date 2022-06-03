@@ -3,23 +3,23 @@ import { useHistory } from 'react-router-dom';
 
 
 
-import { Container, NumberContainer } from './styles';
+import { Container, NumberContainer, NumberH1, NumberH2 } from './styles';
 
 const UserNumbers = props => (
     <Container>
         <NumberContainer>
-            <h1>13</h1>
-            <h2>Repositórios</h2>
+            <NumberH1>13</NumberH1>
+            <NumberH2>Repositórios</NumberH2>
         </NumberContainer>
 
         <NumberContainer>
-            <h1>15</h1>
-            <h2>Seguidores</h2>
+            <NumberH1>15</NumberH1>
+            <NumberH2>Seguidores</NumberH2>
         </NumberContainer>
 
         <NumberContainer>
-            <h1>18</h1>
-            <h2>Seguindo</h2>
+            <NumberH1>18</NumberH1>
+            <NumberH2>Seguindo</NumberH2>
         </NumberContainer>
 
     </Container>
