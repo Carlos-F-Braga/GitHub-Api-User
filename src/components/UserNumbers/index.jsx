@@ -5,9 +5,16 @@ import { useHistory } from 'react-router-dom';
 
 import { Container, NumberContainer, NumberH1, NumberH2 } from './styles';
 
-const UserNumbers = props => (
+const UserNumbers = props => {
+    const history = useHistory();
+
+    const handleOnClick = (route) => {
+        history.push(route);
+    }
+
+    return(
     <Container>
-        <NumberContainer>
+        <NumberContainer onClick={() => handleOnClick('./repos')}>
             <NumberH1>13</NumberH1>
             <NumberH2>Repositórios</NumberH2>
         </NumberContainer>
@@ -23,6 +30,6 @@ const UserNumbers = props => (
         </NumberContainer>
 
     </Container>
-)
+)}
 
 export default UserNumbers;
